@@ -1,0 +1,105 @@
+.recruiter-cta {
+    padding: 90px 10%;
+}
+
+.cta-content {
+    text-align: center;
+
+    padding: 60px 40px;
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(80, 0, 202, 0.95),
+        rgba(101, 32, 216, 0.95)
+    );
+
+    color: white;
+
+    box-shadow: 0 15px 40px rgba(80, 0, 202, 0.25);
+}
+
+.cta-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    opacity: 0.95;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-primary,
+.cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 24px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.cta-primary {
+    background: white;
+    color: #5000ca;
+}
+
+.cta-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.cta-primary:hover,
+.cta-secondary:hover {
+    transform: translateY(-4px);
+}
+
+/* Primary Button Hover */
+
+.cta-primary:hover {
+    background: #f5f5f5;
+    color: #5000ca !important;
+}
+
+/* Secondary Button Hover */
+
+.cta-secondary:hover {
+    background: white;
+    color: #5000ca !important;
+    border-color: white;
+}
+
+.cta-content {
+    animation: floatCard 4s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

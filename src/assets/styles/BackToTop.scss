@@ -1,0 +1,29 @@
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #5000ca;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(80, 0, 202, 0.35);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    background-color: #6520d8;
+}
+
+/* light mode support */
+.light-mode .back-to-top {
+    background-color: #5000ca;
+    color: white;
+}

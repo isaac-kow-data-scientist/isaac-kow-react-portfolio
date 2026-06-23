@@ -1,0 +1,175 @@
+/* MAIN LAYOUT */
+.dashboard-analytics {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 40px 25px;
+}
+
+/* TITLE */
+.dashboard-analytics h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+/* =========================
+   KPI DASHBOARD STRIP
+========================= */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.kpi-card {
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.kpi-card span {
+    font-size: 1.6rem;
+}
+
+.kpi-card h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #5000ca;
+}
+
+.kpi-card p {
+    opacity: 0.8;
+}
+
+.kpi-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Accent colors per KPI */
+.kpi-card.views::before,
+.kpi-card.downloads::before,
+.kpi-card.dashboards::before,
+.kpi-card.cv::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #5000ca;
+}
+
+/* =========================
+   TOP DASHBOARD CARD
+========================= */
+.top-dashboard-card {
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 40px;
+    border-left: 6px solid #5000ca;
+    transition: 0.3s ease;
+}
+
+.top-dashboard-card:hover {
+    transform: translateY(-4px);
+}
+
+.top-badge {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #5000ca;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   TABLE STYLE (BI LOOK)
+========================= */
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 120px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    align-items: center;
+}
+
+.table-row:hover {
+    transform: translateX(5px);
+}
+
+.rank {
+    font-weight: 700;
+    color: #5000ca;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.value {
+    text-align: right;
+    font-weight: 800;
+    color: #5000ca;
+}
+
+/* EMPTY STATE */
+.analytics-empty {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+.light-mode .kpi-card,
+.light-mode .table-row,
+.light-mode .top-dashboard-card {
+    background: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   DARK MODE
+========================= */
+.dark-mode .kpi-card,
+.dark-mode .table-row,
+.dark-mode .top-dashboard-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+.dark-mode .name {
+    color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .table-row {
+        grid-template-columns: 60px 1fr 80px;
+    }
+}

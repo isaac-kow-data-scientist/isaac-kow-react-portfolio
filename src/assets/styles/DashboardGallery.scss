@@ -1,0 +1,238 @@
+.dashboard-gallery-section {
+    padding: 80px 10%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.dashboard-subtitle {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    opacity: 0.8;
+}
+
+.dashboard-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.dashboard-filters button {
+    border: 1px solid #5000ca;
+    background: transparent;
+    color: #5000ca;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dashboard-filters button:hover,
+.active-filter {
+    background: #5000ca;
+    color: white;
+}
+
+.dashboard-search {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 25px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid #5000ca;
+    outline: none;
+}
+
+.dashboard-card {
+    border: 1px solid transparent;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(80, 0, 202, 0.25);
+    border-color: #5000ca;
+}
+
+.dark-mode .dashboard-card {
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.light-mode .dashboard-card {
+    background: white;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.dashboard-card:hover img {
+    transform: scale(1.05);
+}
+
+.dashboard-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-content p {
+    flex-grow: 1;
+}
+
+.dashboard-content h3 {
+    margin-bottom: 10px;
+}
+
+.dashboard-content span {
+    color: #5000ca;
+    font-weight: 600;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #5000ca !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #5000ca !important;
+}
+
+.swiper-slide {
+    height: auto;
+    display: flex;
+}
+
+.tool-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+
+    color: #5000ca;
+    font-weight: 600;
+}
+
+.tool-row svg {
+    font-size: 1.1rem;
+}
+
+.dashboard-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.dashboard-modal {
+    position: relative;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dark-mode .dashboard-modal {
+    background: #111827;
+}
+
+.light-mode .dashboard-modal {
+    background: white;
+}
+
+.dashboard-modal img {
+    width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+}
+
+.highlight {
+    background: rgba(80, 0, 202, 0.2);
+    color: #5000ca;
+    padding: 0 4px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.dashboard-modal h2 {
+    padding-top: 20px;
+}
+
+.dashboard-modal p {
+    padding-bottom: 25px;
+}
+
+.close-dashboard-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.close-dashboard-modal:hover {
+    background: #5000ca;
+}
+
+.dashboard-category {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(80, 0, 202, 0.12);
+    color: #5000ca;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.dashboard-tool-badge {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: rgba(80, 0, 202, 0.12);
+    color: #5000ca;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.dashboard-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 50px;
+    flex-wrap: wrap;
+}
+
+.dashboard-stats div {
+    min-width: 150px;
+}
+
+.dashboard-stats h2 {
+    color: #5000ca;
+    margin-bottom: 5px;
+}

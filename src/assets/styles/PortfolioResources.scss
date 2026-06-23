@@ -1,0 +1,55 @@
+.portfolio-resources-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.resources-subtitle {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    opacity: 0.8;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.resource-card {
+    padding: 35px;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .resource-card {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.light-mode .resource-card {
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.resource-card:hover {
+    transform: translateY(-8px);
+}
+
+.resource-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 15px;
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    background: #5000ca;
+    color: white !important;
+
+    font-weight: 600;
+}
+
+.resource-btn:hover {
+    background: #6520d8;
+}

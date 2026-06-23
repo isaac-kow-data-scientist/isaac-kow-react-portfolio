@@ -1,6 +1,6 @@
 .vertical-timeline span {
     color: white;
-    font-family: 'Courier Prime', monospace;
+    font-family: "Courier Prime", monospace;
 }
 
 .vertical-timeline p {
@@ -36,3 +36,35 @@
         color: rgb(39, 40, 34);
     }
 }
+
+.vertical-timeline-element-content {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.vertical-timeline-element-content:hover {
+    transform: translateY(-6px);
+    border-color: #5000ca;
+    box-shadow: 0 10px 25px rgba(80, 0, 202, 0.25);
+}
+
+.timeline-intro {
+    max-width: 700px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    opacity: 0.85;
+}
+
+.vertical-timeline-element-icon {
+    transition: all 0.3s ease !important;
+    box-shadow: 0 0 20px #5000ca !important;
+}
+
+.vertical-timeline-element-icon:hover {
+    transform: scale(1.15) !important;
+    box-shadow: 0 0 35px #5000ca !important;
+}
+
+// .vertical-timeline-element-icon {
+//     border: 5px solid red !important;
+// }
