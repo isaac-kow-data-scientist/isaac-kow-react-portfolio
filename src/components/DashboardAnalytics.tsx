@@ -105,15 +105,19 @@ function DashboardAnalytics() {
             <h3 className="analytics-section-title">Download Analytics</h3>
 
             <div className="table">
-                {Object.entries(downloads)
-                    .sort((a, b) => b[1] - a[1])
-                    .map(([name, count], index) => (
-                        <div className="table-row" key={name}>
-                            <div className="rank">#{index + 1}</div>
-                            <div className="name">{name}</div>
-                            <div className="value">{count}</div>
-                        </div>
-                    ))}
+                {Object.entries(downloads).length === 0 ? (
+                    <div className="analytics-empty">No downloads yet.</div>
+                ) : (
+                    Object.entries(downloads)
+                        .sort((a, b) => b[1] - a[1])
+                        .map(([name, count], index) => (
+                            <div className="table-row" key={name}>
+                                <div className="rank">#{index + 1}</div>
+                                <div className="name">{name}</div>
+                                <div className="value">{count}</div>
+                            </div>
+                        ))
+                )}
             </div>
         </section>
     );

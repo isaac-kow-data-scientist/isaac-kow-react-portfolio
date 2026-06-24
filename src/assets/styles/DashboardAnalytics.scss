@@ -144,10 +144,16 @@
    DARK MODE
 ========================= */
 .dark-mode .kpi-card,
-.dark-mode .table-row,
+.dark-mode .table-row {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
 .dark-mode .top-dashboard-card {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 6px solid #5000ca;
     color: white;
 }
 

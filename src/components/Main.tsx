@@ -70,7 +70,7 @@ function Main() {
                             href="/documents/Isaac_Kow_Mensah_CV.pdf"
                             download
                             className="primary-btn"
-                            onClick={() => trackDownload("Hero CV Download")}>
+                            onClick={() => trackDownload("hero_cv_download")}>
                             <DownloadIcon />
                             Download CV
                         </a>

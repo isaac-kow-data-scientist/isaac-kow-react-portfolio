@@ -35,8 +35,13 @@
     transition: all 0.3s ease;
 }
 
+.footer-column a {
+    cursor: pointer;
+}
+
 .footer-column a:hover {
     color: #5000ca;
+    font-weight: 500;
     transform: translateX(4px);
 }
 
@@ -113,6 +118,11 @@
 .dark-mode .footer-column a,
 .dark-mode .footer-column p {
     color: #d1d5db;
+}
+
+.light-mode .footer-column a:hover,
+.dark-mode .footer-column a:hover {
+    color: #5000ca;
 }
 
 .dark-mode .footer-socials a {

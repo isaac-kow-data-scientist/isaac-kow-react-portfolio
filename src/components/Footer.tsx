@@ -1,7 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { trackContactClick } from "../utils/analytics";
+import { trackContactClick, trackCTA } from "../utils/analytics";
 import VisitorCounter from "./VisitorCounter";
 
 import "../assets/styles/Footer.scss";
@@ -57,12 +57,36 @@ function Footer() {
                 <div className="footer-column">
                     <h3>Quick Links</h3>
 
-                    <a href="#expertise">Expertise</a>
-                    <a href="#history">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#dashboard-gallery">Dashboards</a>
-                    <a href="#certifications">Certifications</a>
-                    <a href="#contact">Contact</a>
+                    <a
+                        href="#expertise"
+                        onClick={() => trackCTA("footer_expertise")}>
+                        Expertise
+                    </a>
+                    <a
+                        href="#history"
+                        onClick={() => trackCTA("footer_experience")}>
+                        Experience
+                    </a>
+                    <a
+                        href="#projects"
+                        onClick={() => trackCTA("footer_projects")}>
+                        Projects
+                    </a>
+                    <a
+                        href="#dashboard-gallery"
+                        onClick={() => trackCTA("footer_dashboard")}>
+                        Dashboards
+                    </a>
+                    <a
+                        href="#certifications"
+                        onClick={() => trackCTA("footer_certifications")}>
+                        Certifications
+                    </a>
+                    <a
+                        href="#contact"
+                        onClick={() => trackCTA("footer_contact")}>
+                        Contact
+                    </a>
                 </div>
 
                 {/* Column 3 */}
