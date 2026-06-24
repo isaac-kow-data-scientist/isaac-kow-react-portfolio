@@ -24,12 +24,14 @@ function Main() {
                         <a
                             href="https://github.com/isaac-kow-data-scientist"
                             target="_blank"
+                            onClick={() => trackCTA("hero_github")}
                             rel="noreferrer">
                             <GitHubIcon />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/isaackowmensah/"
                             target="_blank"
+                            onClick={() => trackCTA("hero_linkedin")}
                             rel="noreferrer">
                             <LinkedInIcon />
                         </a>
