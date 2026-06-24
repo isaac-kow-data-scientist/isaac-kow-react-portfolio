@@ -123,11 +123,40 @@
     color: #5000ca;
 }
 
+// ANALYTICS TITLE
+.analytics-section-title {
+    margin: 35px 0 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.light-mode .analytics-section-title {
+    color: #111827;
+}
+
+.dark-mode .analytics-section-title {
+    color: #f9fafb;
+}
+
 /* EMPTY STATE */
 .analytics-empty {
     text-align: center;
     padding: 20px;
     opacity: 0.7;
+}
+
+.analytics-empty {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.light-mode .analytics-empty {
+    color: #6b7280;
+}
+
+.dark-mode .analytics-empty {
+    color: #d1d5db;
 }
 
 /* =========================
