@@ -31,11 +31,21 @@ This portfolio highlights:
 - Responsive design
 - Dark and light mode
 - Dashboard gallery
+- Dashboard interaction tracking
 - Resume download tracking
 - Visitor analytics dashboard
-- Google Analytics integration
+- Google Analytics 4 integration
 - Contact form integration
 - Recruiter call-to-action section
+- Mobile-friendly UI
+
+## Project Structure
+
+src/
+├── components/
+├── assets/
+├── utils/
+└── styles/
 
 ## Installation
 
@@ -62,6 +72,10 @@ Build for production:
 ```bash
 npm run build
 ```
+
+## Deployment
+
+This portfolio is deployed using Vercel.
 
 ## Live Website
 
