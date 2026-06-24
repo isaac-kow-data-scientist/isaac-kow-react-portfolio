@@ -56,10 +56,6 @@ function Contact() {
             return;
         }
 
-        console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
-        console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
-        console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
-
         const templateParams = {
             name,
             email,
