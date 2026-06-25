@@ -61,7 +61,7 @@ function Main() {
                     </p>
                     <div className="hero-buttons">
                         <a
-                            href="/documents/Isaac_Kow_Mensah_CV.pdf"
+                            href="/documents/sample_cv.jpg"
                             target="_blank"
                             rel="noreferrer"
                             className="primary-btn"
@@ -69,7 +69,7 @@ function Main() {
                             View CV
                         </a>
                         <a
-                            href="/documents/Isaac_Kow_Mensah_CV.pdf"
+                            href="/documents/sample_cv.jpg"
                             download
                             className="primary-btn"
                             onClick={() => trackDownload("hero_cv_download")}>

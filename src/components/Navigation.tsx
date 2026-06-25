@@ -157,7 +157,7 @@ function Navigation({ parentToChild, modeChange }: any) {
                             </Button>
                         ))}
                         <Button
-                            href="/documents/Isaac_Kow_Mensah_CV.pdf"
+                            href="/documents/sample_cv.jpg"
                             target="_blank"
                             onClick={() => trackCTA("navbar_resume")}
                             sx={{

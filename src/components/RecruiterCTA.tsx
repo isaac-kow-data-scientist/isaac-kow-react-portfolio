@@ -18,7 +18,7 @@ function RecruiterCTA() {
 
                 <div className="cta-buttons">
                     <a
-                        href="/documents/Isaac_Kow_Mensah_CV.pdf"
+                        href="/documents/sample_cv.jpg"
                         download
                         className="cta-primary"
                         onClick={() => trackDownload("Recruiter CTA Resume")}>

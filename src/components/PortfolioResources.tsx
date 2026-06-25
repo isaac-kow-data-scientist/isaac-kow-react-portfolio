@@ -25,7 +25,7 @@ function PortfolioResources() {
                     </p>
 
                     <a
-                        href="/documents/Isaac_Kow_Mensah_CV.pdf"
+                        href="/documents/sample_cv.jpg"
                         download
                         className="resource-btn"
                         onClick={() => trackDownload("Portfolio PDF")}>
@@ -43,7 +43,7 @@ function PortfolioResources() {
                     </p>
 
                     <a
-                        href="/documents/Isaac_Kow_Mensah_CV.pdf"
+                        href="/documents/sample_cv.jpg"
                         download
                         className="resource-btn"
                         onClick={() => trackDownload("Resume CV")}>
